@@ -16,8 +16,8 @@ FROM openjdk:24-slim-bullseye
 # Set the working directory
 WORKDIR /app
 
-COPY --from=build /app/target/toiec_app-0.0.1-SNAPSHOT.jar drcomputer.jar
-EXPOSE 8080
+COPY --from=build /app/target/toeic_app-0.0.1-SNAPSHOT.jar drcomputer.jar
+EXPOSE 8081
 
 ENTRYPOINT ["java","-jar","drcomputer.jar"]
 
